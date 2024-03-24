@@ -15,13 +15,13 @@ const arr2 = ['Hello', 'No what happened']
 
 function Messenger1(prop) {
   return (
-    <div className='Text'>{prop}</div>
+    <div className='Text' id='Message1'>{prop}</div>
   )
 }
 
 function Messenger2(prop) {
   return (
-    <div className='Text'>{prop}</div>
+    <div className='Text' id='Message2'>{prop}</div>
   )
 }
 
