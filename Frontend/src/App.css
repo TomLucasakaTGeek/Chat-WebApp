@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  background-color: rgb(173, 18, 173);
+  color: grey;
 }
 .sendbox {
   display: inline;
