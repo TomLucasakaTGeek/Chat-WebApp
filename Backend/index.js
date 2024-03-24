@@ -5,9 +5,17 @@ const { userModel } = require('./models/data');
 const app = express();
 require("dotenv").config();
 app.use(express.json())
+const { Socket, Server } = require('socket.io');
+const { createServer } = require('http');
+const server = createServer(app);
+const io = new Server(server, {
+    cors: {
+        origin: '*'
+    }
+});
 
 app.get('/', (req, res)=>{
-    res.send("Welcome to Express App")
+    res.send("Welcome to Express App");
 })
 
 app.post('/signup', async (req, res)=>{
