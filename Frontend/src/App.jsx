@@ -13,17 +13,18 @@ import './App.css'
 //     Messenger2(element)
 //   })
 
-// function Messenger1(prop) {
-//   return (
-//     <div className='Text'>{prop}</div>
-//   )
-// }
+function Messenger1(prop) {
+  return (
+    <div className='Text'>{prop}</div>
+  )
+}
 
-// function Messenger2(prop) {
-//   return (
-//     <div className='Text'>{prop}</div>
-//   )
-// }
+function Messenger2(prop) {
+  return (
+    <div className='Text'>{prop}</div>
+  )
+}
+
 function App() {
   let message = "";
   const [messages, setMessages] = useState([]);
