@@ -34,7 +34,8 @@ function App() {
   }
 
   return (
-    <>
+  <>
+    <div className='chats'>
       {messages.map((element => <p>{element}</p>))}
       <div className='sendbox'>
         <input type="text" placeholder='type your message here' onInput={(e) => { 
@@ -42,7 +43,8 @@ function App() {
           }}/>
         <button className='sendbtn' onClick = {handleButton}>Send</button>
       </div>
-    </>
+    </div>    
+  </>
   )
 }
 
