@@ -8,3 +8,7 @@
 .sendbox {
   display: inline;
 }
+.sendbtn{
+  background-color: rgb(47, 132, 229);
+  color: white;
+}

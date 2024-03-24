@@ -34,7 +34,7 @@ function App() {
       </div>
       <div className='sendbox'>
         <input type="text" placeholder='type your message here'/>
-        <button>Send</button>
+        <button className='sendbtn'>Send</button>
       </div>
     </>
   )
