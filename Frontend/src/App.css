@@ -9,12 +9,13 @@
   margin: auto;
 }
 .sendbox {
-  display: inline;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5%;
 }
 .sendbtn{
   background-color: rgb(47, 132, 229);
   color: white;
-  border-radius: 2%;
 }
 /* #Message1 {
   align-items: flex-start;

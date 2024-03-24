@@ -39,8 +39,10 @@ function App() {
       {messages.map((element => <p>{element}</p>))}
       <div className='sendbox'>
         <input type="text" placeholder='type your message here' onInput={(e) => { 
-          message = e.target.value;
-          }}/>
+          //if((e.target.value) != '') 
+            message = e.target.value;
+        }
+        }/>
         <button className='sendbtn' onClick = {handleButton}>Send</button>
       </div>
     </div>    
