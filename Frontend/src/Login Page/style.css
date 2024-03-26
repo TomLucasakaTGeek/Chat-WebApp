@@ -1,0 +1,36 @@
+.body{
+    background-color: green;
+    height: 100%;
+    width: 100%;
+}   
+.submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    background-color: aliceblue;
+    margin: auto;
+    border-radius: 1%;
+    font-family:'Courier New', Courier, monospace;
+    color: green;
+}
+.usname{
+    height: 6vh;
+    width: 25vw;
+    border: 1px solid black;
+}
+.psword{
+    height: 6vh;
+    width: 25vw;
+    border: 1px solid black;
+}
+.btn{
+    height: 6vh;
+    width: 25vw;
+    background-color: green;
+}
+#desc {
+    color: green;
+}

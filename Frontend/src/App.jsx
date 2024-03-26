@@ -2,30 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { LoginPage } from './Login Page/Login.jsx'
 
-// const arr1 = ['Hi', 'Heared the News']
-//   arr1.forEach(element => {
-//     Messenger1(element)
-//   });
-
-// const arr2 = ['Hello', 'No what happened']
-//   arr2.forEach(element =>{
-//     Messenger2(element)
-//   })
-
-function Messenger1(prop) {
-  return (
-    <div className='Text'>{prop}</div>
-  )
-}
-
-function Messenger2(prop) {
-  return (
-    <div className='Text'>{prop}</div>
-  )
-}
-
-function App() {
+function Message() {
   let message = "";
   const [messages, setMessages] = useState([]);
   function handleButton() {
@@ -50,4 +29,8 @@ function App() {
   )
 }
 
+function App() {
+  //Login Routing
+  return <LoginPage/>
+}
 export default App
