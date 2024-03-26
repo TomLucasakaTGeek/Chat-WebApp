@@ -17,13 +17,7 @@
   background-color: rgb(47, 132, 229);
   color: white;
 }
-/* #Message1 {
-  align-items: flex-start;
-}
-#Message2 {
-  align-items: flex-end;
-} */
-p {
+#msg {
   background-color: blue;
   border: 2px solid black;
 }

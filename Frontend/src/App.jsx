@@ -15,7 +15,7 @@ function Message() {
   return (
   <>
     <div className='chats'>
-      {messages.map((element => <p>{element}</p>))}
+      {messages.map((element => <p id='msg'>{element}</p>))}
       <div className='sendbox'>
         <input type="text" placeholder='type your message here' onInput={(e) => { 
           //if((e.target.value) != '') 
