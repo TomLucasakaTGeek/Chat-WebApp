@@ -7,7 +7,7 @@ export function LoginPage() {
             <input type="text" placeholder=' username' className='usname'/>
             <input type="text" placeholder=' placeholder'className='psword'/>
             <button className='btn'>LOGIN</button>
-            <p className='desc'>Not Registered? <b>Create an Account</b></p>
+            <p id='desc'>Not Registered? <b>Create an Account</b></p>
           </div>
         </div>
     )
