@@ -1,11 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import { LoginPage } from './Pages/Login Page/Login.jsx'
+import { Login } from './Pages/Login Page/Login.jsx'
 import { Message } from './Pages/Messaging Page/Message.jsx'
+import { Signup } from './Pages/Signup Page/Signup.jsx'
 
 function App() {  
-  return <LoginPage/>
+  return <Signup/>
 }
+
 export default App

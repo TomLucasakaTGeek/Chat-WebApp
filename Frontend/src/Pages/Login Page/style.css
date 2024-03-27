@@ -29,12 +29,7 @@
     font-family:'Courier New', Courier, monospace;
     color: green;
 } 
-.usname{
-    height: 6vh;
-    width: 25vw;
-    border: 1px solid black;
-}
-.psword{
+.box{
     height: 6vh;
     width: 25vw;
     border: 1px solid black;
