@@ -27,7 +27,6 @@
     margin: auto;
     border-radius: 2%;
     font-family:'Courier New', Courier, monospace;
-    color: green;
 } 
 .box {
     height: 6vh;
@@ -36,8 +35,9 @@
 }
 .btn {
     height: 6vh;
-    width: 25vw;
-    background-color: green;
+    width: 15vw;
+    background-color: blue;
+    border-radius: 2%;
 }
 #desc {
     color: green;
