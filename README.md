@@ -1,6 +1,3 @@
 # Chat Application using MERN Stack
 
--M: MongoDB
--E: Expressjs
--R: Reactjs
--N: Nodejs
+A complex backend project where we use socket.io to create a chat application 
