@@ -6,9 +6,9 @@ export function Signup() {
         <body id='body'>
           <header id='head'>Hello Friend</header>
           <div className='submit'>
-            <input type='text' placeholder=' Name' className='box' />
-            <input type='text' placeholder=' Email' classname='box' />
-            <input type="text" placeholder=' Password' className='box' />
+            <input type="text"  placeholder=" Name"className="box" />
+            <input type="email" placeholder=" Email" className="box" />
+            <input type="password"  placeholder=" Password" className="box" />
             <button className='btn'>CONFIRM</button>
           </div>
         </body>
