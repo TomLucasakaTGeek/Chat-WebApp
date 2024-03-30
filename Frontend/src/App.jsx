@@ -5,9 +5,7 @@ import { Message } from './Pages/Messaging Page/Message.jsx'
 
 function App() {  
   return (
-    <>
       <Login/>
-    </>
   )
 }
 
