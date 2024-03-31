@@ -33,7 +33,7 @@
     width: 25vw;
     border: 0.5vh solid black;
 }
-.btn {
+#btn {
     height: 6vh;
     width: 15vw;
     background-color: blue;
