@@ -1,55 +1,50 @@
 const express = require('express')
 const cors = require('cors');
-const { connectDB } = require('./.config/db');
-const { userModel } = require('./models/data');
+//const { connectDB } = require('./.config/db');
+//const { userModel } = require('./models/data');
 const app = express();
-require("dotenv").config();
-app.use(express.json())
 const { Socket, Server } = require('socket.io');
 const { createServer } = require('http');
 const server = createServer(app);
+app.use(cors())
 const io = new Server(server, {
     cors: {
         origin: '*'
     }
 });
 
+require("dotenv").config();
+app.use(express.json())
+const userRoutes = require('./routes/user');
+app.use('/user', userRoutes);
+
 app.get('/', (req, res)=>{
     res.send("Welcome to Express App");
 })
 
-app.post('/signup', async (req, res)=>{
-    let {name, email} = req.body
-    try {
+io.on('connect', (socket) => {
+    console.log('A user connected:', socket.id);
 
-        res.status(200).send("User Data created succesfully")
-    } catch (error) {
-        console.log(error)
-    }
-})
+    // Handle custom events
+    socket.on('message', (message) => {
+        console.log('Received message:', message);
+        // Broadcast the message to all connected clients
+        io.emit('message', message);
+    });
 
-app.post('/login', async (req, res)=>{
-    let email = req.body;
-    try {
-        if(email) {
-            
-            res.status(200).send({"message":"Logged in Successfully"})
-        }
-        else {
-            res.status(403).send({"message": "User not Found"})
-        }
-    } catch (error) {
-        console.log(error)
-    }
-})
+    // Handle disconnection
+    socket.on('disconnect', () => {
+        console.log('A user disconnected:', socket.id);
+    });
+});
 
 app.listen(process.env.PORT, async(req, res)=>{
-    try {
-        await connectDB
-        console.log("Connected with DB")
-    } catch (error) {
-        console.log(error)
-    }
+    // try {
+    //     await connectDB
+    //     console.log("Connected with DB")
+    // } catch (error) {
+    //     console.log(error)
+    // }
     console.log(`Server is running on port ${process.env.PORT}`)
 }) 
 
