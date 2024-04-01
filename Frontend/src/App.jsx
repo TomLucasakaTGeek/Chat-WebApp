@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react';
+import io from 'socket.io-client';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -32,6 +33,25 @@ function App() {
     let newArray = [...messages, message];
     setMessages(newArray);
   }
+
+  useEffect(() => {
+    const socket = io('http://localhost:3000');
+
+    socket.on('connect', () => {
+        console.log('Connected to server');
+    });
+
+    socket.emit('message', "hi from client");
+    socket.on('message', (data) => {
+        console.log('Received message:', data);
+        // Update UI or state with received message
+    });
+
+    return () => {
+        socket.disconnect();
+    };
+}, []);
+
 
   return (
   <>
