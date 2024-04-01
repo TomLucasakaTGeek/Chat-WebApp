@@ -1,0 +1,23 @@
+.chats {
+    border: 2px solid black;
+    width: 18vw;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: rgb(173, 18, 173);
+    color: rgb(247, 243, 11);
+    margin: auto;
+}
+.sendbox {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5%;
+}
+.sendbtn{
+    background-color: rgb(47, 132, 229);
+    color: white;
+}
+#msg {
+    background-color: blue;
+    border: 2px solid black;
+}
