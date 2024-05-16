@@ -1,5 +1,6 @@
 import { useState } from "react";
 import './style.css'
+import { Contact } from "../../SideBar/Contact";
 
 export function Message() {
     let message = "";
@@ -25,3 +26,5 @@ export function Message() {
     </>
     )
   }
+
+  

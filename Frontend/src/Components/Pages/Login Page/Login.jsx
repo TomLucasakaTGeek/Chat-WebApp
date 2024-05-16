@@ -1,3 +1,4 @@
+import { Contact } from '../../SideBar/Contact'
 import './style.css'
 import { NavLink } from 'react-router-dom'
 
@@ -18,6 +19,7 @@ export function Login() {
             </p>
 
           </div>
+          <Contact/>
         </body>
     )
   }
