@@ -1,6 +1,22 @@
 .searchbox {
-    width: 10vw;
+    width: 16vw;
     font-size: small;
-    color: white;
+    color: yellow;
     border-radius: 5%;
+}
+.bar{
+    width: 20vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#contact {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#pfp{
+    height: 3px;
+    border-radius: 50%;
 }

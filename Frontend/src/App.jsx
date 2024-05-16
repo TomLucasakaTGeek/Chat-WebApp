@@ -1,8 +1,8 @@
 import './App.css'
-import { Home } from './Pages/Home Page/Home.jsx'
-import { Signup } from './Pages/Signup Page/Signup.jsx'
-import { Login } from './Pages/Login Page/Login.jsx'
-import { Message } from './Pages/Messaging Page/Message.jsx'
+import { Home } from './Components/Pages/Home Page/Home.jsx'
+import { Signup } from './Components/Pages/Signup Page/Signup.jsx'
+import { Login } from './Components/Pages/Login Page/Login.jsx'
+import { Message } from './Components/Pages/Messaging Page/Message.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 function App() {  

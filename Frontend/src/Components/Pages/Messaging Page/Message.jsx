@@ -1,6 +1,7 @@
 import { useState } from "react";
 import './style.css'
-import { Contact } from "../../SideBar/Contact";
+import { Contactbar } from "../../SideBar/Contact";
+
 
 export function Message() {
     let message = "";
@@ -12,6 +13,7 @@ export function Message() {
   
     return (
     <>
+      <Contactbar/>
       <div className='chats'>
         {messages.map((element => <p id='msg'>{element}</p>))}
         <div className='sendbox'>

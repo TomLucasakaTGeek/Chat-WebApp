@@ -19,7 +19,6 @@ export function Login() {
             </p>
 
           </div>
-          <Contact/>
         </body>
     )
   }
