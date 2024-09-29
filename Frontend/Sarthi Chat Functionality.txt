@@ -1,0 +1,9 @@
+Sarthi Chat Functionality
+0) Boilerplate code✔️
+1) Database Model - Object: { Name: string, Messages: Array }<--- ✔️	
+2) Web sockets between 2 contacts				|
+3) Express Route that uses above functionalities		|
+4) Chat Screen component to render the object  -----------------|
+5) Message component to append in this object ------------------|
+6) Sidebar component which shows pfp, lastmesage, Name of person requested from the Array/Object.
+7) Props and functions that trigger all the activity
